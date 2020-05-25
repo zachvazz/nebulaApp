@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View , Button, TextInput, Image} from 'react-native';
+import { StyleSheet, Text, View , Button, TextInput, Image, TouchableOpacity} from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 export default class Category extends Component {
     constructor(props){
@@ -10,10 +11,13 @@ export default class Category extends Component {
     render(){
         return(
             <View>
-                {/* <Image 
-                
-                /> */}
+                <TouchableOpacity onPress={()=>Actions.Arthritis()}>
+                <Image 
+                    source = {require('./assets/arthritis.jpg')}
+                    style = {{height: 100, width: 100}}
+                />
                 <Text>{this.props.problemName}</Text>
+                </TouchableOpacity>
             </View>
         )
     }

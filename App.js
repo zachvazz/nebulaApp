@@ -1,33 +1,30 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View , Button, TextInput} from 'react-native';
-import Category from './category'
+import React, {Component} from 'react';
+import { Router, Scene, Drawer } from 'react-native-router-flux';
+
+import CategoriesScreens from './screens/CategoriesScreens';
+import Arthritis from './screens/Arthritis';
+import DrawerContent from './screens/DrawerContent';
 
 export default class App extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      count: 0,
-      count1: 1
-    }
-  }
   render() {
-  return (
-    <View style={styles.container}>
-      <View>
-        <Category 
-          problemName = 'Arthritis'
-        />
-      </View>
-    </View>
-  );
-}
-}
+    return (
+      <Router>
+        <Scene key='root' headerMode='none'>
+          <Drawer contentComponent={DrawerContent} drawerWidth={280}>
+            <Scene 
+              key='CategoriesScreens' 
+              component={CategoriesScreens}
+              initial
+            />
+            <Scene 
+              key='Arthritis'
+              component={Arthritis}
+            />
+            
+          </Drawer>
+        </Scene>
+      </Router>
+    );
+  }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+}
