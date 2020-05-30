@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'    
     },
     logoContainer: {
+        marginTop: 200,
         alignItems:'center',
         flexGrow: 1,
         justifyContent : 'center'
