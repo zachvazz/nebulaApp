@@ -4,6 +4,7 @@ import { Router, Scene, Drawer } from 'react-native-router-flux';
 import CategoriesScreens from './screens/CategoriesScreens';
 import Arthritis from './screens/Arthritis';
 import DrawerContent from './screens/DrawerContent';
+import Login from './screens/Login/Login';
 
 export default class App extends Component {
   render() {
@@ -20,7 +21,10 @@ export default class App extends Component {
               key='Arthritis'
               component={Arthritis}
             />
-            
+            <Scene 
+              key='Login'
+              component={Login}
+            />
           </Drawer>
         </Scene>
       </Router>

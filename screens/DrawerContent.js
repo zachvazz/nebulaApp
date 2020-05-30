@@ -7,6 +7,11 @@ export default class DrawerContent extends Component {
     render() {
         return(
             <View style={styles.container}>
+                <TouchableOpacity onPress={()=>Actions.Login()}>
+                    <View>
+                        <Text style={styles.option}>Login</Text>
+                    </View>
+                </TouchableOpacity>
                 <TouchableOpacity onPress={()=>Actions.CategoriesScreens()}>
                     <View>
                         <Text style={styles.option}>Categories</Text>
