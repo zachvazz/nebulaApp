@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {StyleSheet, View, Image, Text, KeyboardAvoidingView } from 'react-native';
+import {StyleSheet, View, Image, Text } from 'react-native';
 import LoginForm from './LoginForm';
 
 export default class Login extends Component {
@@ -9,7 +9,7 @@ export default class Login extends Component {
                     <View style={styles.logoContainer}>
                         <Image 
                         style={styles.logo}
-                        source={require('../../assets/arthritis.jpg')}
+                        source={require('../../assets/splash.png')}
                         />
                         <Text style={styles.title}>An app made for online physiotherapy</Text>
                     </View>

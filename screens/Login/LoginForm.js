@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text, StatusBar } from 'react-native';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text, StatusBar, Button } from 'react-native';
+import { Actions } from 'react-native-router-flux';
+import Welcome from './Welcome';
 
 export default class LoginForm extends Component {
     render() {
@@ -17,9 +19,14 @@ export default class LoginForm extends Component {
                  style={styles.input}
                 />
 
-                <TouchableOpacity style={styles.buttonContainer}>
-                    <Text style={styles.buttonText}>Login</Text>
-                </TouchableOpacity>
+                {/* <TouchableOpacity style={styles.buttonContainer}>
+                   <Text style={styles.buttonText}>Login</Text>
+                </TouchableOpacity> */}
+
+                <Button
+                onPress={()=>Actions.Welcome()}
+                    title='Login'
+                />
             </View>
         );
     }
