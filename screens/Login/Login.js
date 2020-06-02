@@ -29,9 +29,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'    
     },
     logoContainer: {
-        marginTop: 200,
+        marginTop: 120,
         alignItems:'center',
-        flexGrow: 1,
+        flexGrow: 2,
         justifyContent : 'center'
     },
     logo: {

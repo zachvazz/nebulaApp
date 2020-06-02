@@ -23,9 +23,13 @@ export default class LoginForm extends Component {
                    <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity> */}
 
-                <Button
+                <Button 
                 onPress={()=>Actions.Welcome()}
                     title='Login'
+                />
+                <Button
+                onPress={()=>Actions.Register()}
+                    title='Register'
                 />
             </View>
         );
