@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {StyleSheet, View, Image, Text } from 'react-native';
+import {StyleSheet, View, Image, Header } from 'react-native';
+import RegisterForm from './RegisterForm';
 
 export default class Register extends Component {
     render() {
@@ -10,10 +11,9 @@ export default class Register extends Component {
                         style={styles.logo}
                         source={require('../../assets/splash.png')}
                         />
-                        <Text style={styles.title}>An app made for online physiotherapy</Text>
                     </View>
                     <View style={styles.logoContainer}>
-                    <LoginForm />
+                    <RegisterForm />
                     </View>
                 </View>
        );
@@ -33,15 +33,15 @@ const styles = StyleSheet.create({
         flexGrow: 2,
         justifyContent : 'center'
     },
+    Header: {
+        marginTop: 20,
+        alignItems: 'center',
+        color: '#000000',
+        flexGrow: 1,
+        justifyContent: 'center'
+    },
     logo: {
         width: 100,
         height: 100
-    },
-    title: {
-        color: '#000000',
-        marginTop: 10,
-        width: 160,
-        textAlign: 'center',
-        opacity: 0.9
     }
 });

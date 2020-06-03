@@ -6,6 +6,7 @@ import Arthritis from './screens/Arthritis';
 import DrawerContent from './screens/DrawerContent';
 import Login from './screens/Login/Login';
 import Welcome from './screens/Login/Welcome';
+import Register from './screens/Login/Register';
 
 export default class App extends Component {
   render() {
@@ -29,6 +30,10 @@ export default class App extends Component {
             <Scene
               key='Welcome'
               component={Welcome}
+            />
+            <Scene 
+              key='Register'
+              component={Register}
             />
           </Drawer>
         </Scene>

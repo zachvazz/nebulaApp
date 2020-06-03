@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, StatusBar, Button } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import Welcome from './Welcome';
+import Register from './Register';
 
 export default class LoginForm extends Component {
     render() {
