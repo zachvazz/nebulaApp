@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View , Button, TextInput} from 'react-native';
 import Category from '../category'
 import {
     Dimensions,
