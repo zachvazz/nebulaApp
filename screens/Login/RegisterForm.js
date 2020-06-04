@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, StatusBar, Button } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import Welcome from './Welcome';
-import Register from './Register';
 
 export default class LoginForm extends Component {
     render() {
@@ -24,10 +22,6 @@ export default class LoginForm extends Component {
                    <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity> */}
 
-                <Button 
-                onPress={()=>Actions.Welcome()}
-                    title='Login'
-                />
                 <Button
                 onPress={()=>Actions.Register()}
                     title='Register'
