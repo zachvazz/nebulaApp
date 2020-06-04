@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
-import Category from '../category'
-import {
-    Dimensions,
-    AppRegistry,
-    StyleSheet,
-    View,
-    Text,
-    Button,
-    StatusBar
-} from 'react-native';
+import { Dimensions, AppRegistry, StyleSheet, View, Text, Button, StatusBar} from 'react-native';
 import SearchHeader from 'react-native-search-header';
  
 const DEVICE_WIDTH = Dimensions.get(`window`).width;

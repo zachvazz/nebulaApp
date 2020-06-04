@@ -5,9 +5,7 @@ import CategoriesScreens from './screens/CategoriesScreens';
 import Arthritis from './screens/Arthritis';
 import DrawerContent from './screens/DrawerContent';
 import Login from './screens/Login/Login';
-import Welcome from './screens/Login/Welcome';
-import Register from './screens/Login/Register';
-
+import Search from './screens/Search'
 export default class App extends Component {
   render() {
     return (
@@ -27,13 +25,9 @@ export default class App extends Component {
               key='Login'
               component={Login}
             />
-            <Scene
-              key='Welcome'
-              component={Welcome}
-            />
             <Scene 
-              key='Register'
-              component={Register}
+              key='Search'
+              component={Search}
             />
           </Drawer>
         </Scene>
